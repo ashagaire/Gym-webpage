@@ -1,5 +1,6 @@
 services:
   - name: sveltekit
     type: web
-    buildCommand: npm run build
-    startCommand: npm run preview
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node build/index.js
